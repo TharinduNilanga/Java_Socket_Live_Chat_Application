@@ -1,6 +1,6 @@
-package Client_Side.controller;
+package client.controller;
 
-import Client_Side.model.Message;
+import client.model.Message;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

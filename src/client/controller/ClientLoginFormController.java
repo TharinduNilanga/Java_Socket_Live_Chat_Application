@@ -1,4 +1,4 @@
-package Client_Side.controller;
+package client.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

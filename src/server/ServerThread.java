@@ -1,6 +1,6 @@
-package Server_Side;
+package server;
 
-import Client_Side.model.Message;
+import client.model.Message;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
