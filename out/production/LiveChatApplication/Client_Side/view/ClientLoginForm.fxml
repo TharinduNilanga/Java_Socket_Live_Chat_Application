@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainRoot" prefHeight="616.0" prefWidth="504.0" style="-fx-background-color: #F6F6F6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client_Side.controller.ClientLoginFormController">
+    <children>
+        <TextField fx:id="txtName" layoutX="121.0" layoutY="365.0" prefHeight="51.0" prefWidth="262.0" promptText="Enter UserName" style="-fx-background-radius: 20px;" />
+        <!-- <JFXButton buttonType="RAISED" layoutX="40.0" layoutY="413.0" prefHeight="42.0" prefWidth="262.0" style="-fx-background-radius: 50; -fx-background-color: #9400D3;" text="Continue" textAlignment="CENTER" />-->
+        <JFXButton buttonType="RAISED" layoutX="186.0" layoutY="444.0" onAction="#loginBtnOnAction" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: #0a89fc; -fx-background-radius: 20;" text="Login" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+      <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="197.0" layoutY="80.0">
+         <image>
+            <Image url="@../assets/chat.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="201.0" prefHeight="49.0" prefWidth="308.0" text="Welcome to Chat....!" textFill="#0a89fc">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
