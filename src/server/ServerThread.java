@@ -22,22 +22,11 @@ public class ServerThread extends Thread {
     @Override
     public void run() {
         try {
-            //Reading the input from Client
-
-
             ObjectInputStream objectInputStream = new ObjectInputStream(socket.getInputStream());
-
-
-            /*returning the output to the client : true statement is to flush the buffer otherwise
-            we have to do it manually*/
             objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
 
-            //infinite loop for server
             while (true) {
-                /*String outputString = input.readLine();*/
                 Message msg = (Message) objectInputStream.readObject();
-
-                //if user type exit command then program will terminate
                 if (msg.getMessage().equals("exit")) {
                     break;
                 }
